@@ -21,5 +21,5 @@ info = {
     "user[password]": password,
 }
 
-res = session.post(login_url, data=info, cookies=cookie)
-print(res.text)
+login_res = session.post(login_url, data=info, cookies=cookie)
+print(login_res.status_code)
